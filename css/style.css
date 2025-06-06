@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #9659ff;
+  --seconder-color: #b491ff;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#9cecff, var(--seconder-color));
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container {
+  width: 350px;
+  padding: 25px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+.mp3-title {
+  text-transform: capitalize;
+  color: var(--seconder-color);
+}
+.mp3-title .hide,
+.mp3-title .more{
+  cursor: pointer;
+}
+.images {
+  width: 100%;
+  height: 200px;
+  margin: 30px 0 20px 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.images img {
+  width: 100%;
+  height: 100%;
+}
+.mp3-name {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+.mp3-name .song {
+  color: var(--main-color);
+}
+.mp3-name .singer {
+  padding: 5px 0 20px;
+  color: var(--seconder-color);
+}
+.mp3-bar {
+  width: 100%;
+  height: 6px;
+  border-radius: 0 5px 5px 0;
+  background-color: #dedede;
+  cursor: pointer;
+}
+.mp3-bar .bar-progres {
+  width: 0;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+  background-color: var(--main-color);
+}
+.mp3-time {
+  margin: 10px 0 25px;
+  color: var(--main-color);
+  cursor: default;
+}
+.mp3-control .change-icon,
+.mp3-control .favrit-icon {
+  width: 30px;
+  padding: 7px;
+  border-radius: 50px;
+  font-size: 15px;
+  text-align: center;
+  color: var(--main-color);
+  background-color: #dedede;
+  cursor: pointer;
+}
+.previous,
+.play-btn,
+.next {
+  font-size: 30px;
+  color: var(--main-color);
+  cursor: pointer;
+}
+.play-btn {
+  width: 30px;
+  font-size: 40px;
+  text-align: center;
+}
+
+/* Start Media Queries */
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 379.98px) {
+  body {
+    padding: 0 15px;
+  }
+  .container {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .mp3-title {
+    font-size: 14px;
+  }
+  .images {
+    height: 160px;
+    margin: 20px 0;
+    border-radius: 5px;
+  }
+  .mp3-name {
+    font-size: 16px;
+  }
+  .mp3-name .singer {
+    padding-bottom: 15px;
+  }
+  .mp3-bar {
+    height: 5px;
+  }
+  .previous,
+  .play-btn,
+  .next {
+    font-size: 25px;
+  }
+  .play-btn {
+    font-size: 30px;
+  }
+}
+/* End Media Queries */

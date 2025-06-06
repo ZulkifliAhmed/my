@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Font Awesome library file-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!--css style file-->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>MP3 Player</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="mp3-title flex">
+        <div class="hide"><i class="fa-solid fa-angle-down"></i></div>
+        <h4>now playing</h4>
+        <div class="more"><i class="fa-solid fa-list"></i></div>
+      </div>
+      <div class="images">
+        <img src="" alt="images" />
+      </div>
+      <!-- singer and song name -->
+      <div class="mp3-name">
+        <div class="song"></div>
+        <div class="singer"></div>
+      </div>
+      <audio class="mp3-src" src=""></audio>
+      <!-- progress area -->
+      <div class="mp3-bar">
+        <div class="bar-progres"></div>
+      </div>
+      <div class="mp3-time flex">
+        <span id="music-time">00:00</span>
+        <span id="music-duration">00:00</span>
+      </div>
+      <div class="mp3-control flex">
+        <!-- change reapet shuffle icon -->
+        <div class="change">
+          <i id="change-icon" class="fa-solid fa-repeat change-icon"></i>
+        </div>
+        <!-- previous icon -->
+        <div class="previous">
+          <i id="previous" class="fa-solid fa-backward-step"></i>
+        </div>
+        <!-- play and pause button -->
+        <div class="play-btn">
+          <i id="toggleBtn" class="fas fa-play"></i>
+        </div>
+        <!-- next icon -->
+        <div class="next">
+          <i id="next" class="fa-solid fa-forward-step"></i>
+        </div>
+        <!-- favrit icon -->
+        <div class="favrit">
+          <i id="favrit" class="fa-regular fa-heart favrit-icon"></i>
+        </div>
+      </div>
+    </div>
+    <!--list of songs js file-->
+    <script src="js/list.js"></script>
+    <!--main js file-->
+    <script src="js/main.js"></script>
+  </body>
+</html>
